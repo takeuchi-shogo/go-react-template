@@ -1,0 +1,20 @@
+{{ define "index.html" }}
+
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Golang Template</title>
+
+		<link rel="stylesheet" href="css/bundle.css?v{{ version }}">
+	</head>
+	<body>
+		<h1 class="hoge">Hoge!!!!</h1>
+		<div id="root"></div>
+		<script src="js/bundle.js?v{{ version }}"></script>
+	</body>
+</html>
+
+{{ end }}
